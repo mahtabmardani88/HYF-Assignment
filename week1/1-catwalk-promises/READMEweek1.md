@@ -9,3 +9,7 @@ Have a look <a href="https://github.com/HackYourFuture/Assignments/tree/main/2-B
 - To make the code loop we cannot use a standard JavaScript loop (__for__  or __while__). Why is that?
 - Do you feel this version is easier to read than the version you made in the Browsers module?
 - Is this version more efficient or not or does it not matter?
+
+
+---
+* [home page](/README.md)
