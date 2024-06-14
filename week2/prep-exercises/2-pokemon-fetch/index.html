@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#button:hover {
+  background-color: #0056b3;
+}
+label {
+  font-size: 14px;
+}
+#error {
+  color: red;
+  margin-top: 10px;
+}
+  </style>
+  <body>
+    <div>
+      <button type="button" id="button">Get Data</button>
+      <input type="checkbox" id="option" name="option" />
+      <label for="option">Use invalid URL</label>
+    </div>
+    <div id="container">
+      <pre id="json"></pre>
+      <div id="error"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+
+<!-- 
+? If you look at the __index.html__ you can see our error rendering is put into a regular __div__ element, but our pokemon json is put into a __pre__ element. Why is that?
+* We use pre to show JSON because pre keeps all the spaces and new lines. 
+* This makes the JSON look nice and easy to read. For errors, we use div because we don't need special formatting for error messages.
+
+? The comments say to handle the error in the main function. What do you think the advantages are of doing it this way? What about if you would do the error handling in the __fetchJSON__ function?
+* If we handle errors in the main function, all errors are managed in one place. 
+* This makes the code easier to read and understand. If we handle errors in the fetchJSON function, it can make the code more complicated and harder to understand.
+
+
+? Some students ask us why not just put __try/catch__ blocks around the main function and have that as the place to catch all errors. Why do you think we do not suggest doing this?
+* If we catch all errors in one place, it can be hard to know where the error came from. 
+* It's better to catch errors where they happen. This helps us understand and fix problems more easily.
+ -->
