@@ -13,3 +13,6 @@ The expected behaviour is as follows:
 * If you look at the __index.html__ you can see our error rendering is put into a regular __div__ element, but our pokemon json is put into a __pre__ element. Why is that?
 * The comments say to handle the error in the main function. What do you think the advantages are of doing it this way? What about if you would do the error handling in the __fetchJSON__ function?
 * Some students ask us why not just put __try/catch__ blocks around the main function and have that as the place to catch all errors. Why do you think we do not suggest doing this?
+
+---
+* [home page](/README.md)
